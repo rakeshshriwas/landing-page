@@ -1,26 +1,29 @@
-#Landing Page Design
+# Landing Page Design
 
 ## Frontend technologies
 
 HTML, CSS3, SCSS, Bootstrap v4.3.1 (https://getbootstrap.com/), Jquery, Gulpjs 4
 
-##Setup Project
+## Setup Project
 
 ```bash
 Install **NPM** and **Gulp** in order to load dependencies and packages globally.
 * Install [Node](https://nodejs.org/)
 * Install [Gulp](https://gulpjs.com/)
 ```
-##Pull Code From Github Repository
+## Pull Code From Github Repository
 Pull Code From Online git repository
+```bash
+https://github.com/rakeshshriwas/landing-page.git
+```
 
-##Run Command
+## Run Command
 Run command in local Project Folder
 
 ```bash
 sudo npm install
 ```
-##Now Run
+## Now Run
 Run command to copy all folder from source to destination
 
 ```bash
