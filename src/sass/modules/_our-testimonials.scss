@@ -1,0 +1,105 @@
+.our-testimonials{
+    .image-wrapper{
+        position: relative;
+        .image-slide{
+            min-height: 400px;
+            @media (max-width: 768px) {
+                min-height: 250px;
+            }
+            &.bg-overlay{
+                &:after{
+                    content: '';
+                    background-color: rgba(0, 0, 0, 0.53);
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .active-slide{
+        min-height: 400px; 
+        width: calc(100vw - 50vw);
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        @media (max-width: 992px) {
+            width: calc(100vw - 30vw);
+        }
+        @media (max-width: 768px) {
+            min-height: 250px;
+        }
+    }
+    .play-icon{
+        width: 50px;
+        position: absolute;
+        width: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display:none;
+        @media (max-width: 768px) {
+            display:block;
+            width: 40px;
+
+        }
+    }
+    .testimonials-card{
+        width: calc(100vw - 55vw);
+        margin: auto;
+        position: absolute;
+        bottom: calc(100% - 130%);
+        left: 0;
+        right: 0;
+        >div{
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+        }
+        @media (max-width: 992px) {
+            width: calc(100vw - 35vw);
+        }
+        @media (max-width: 768px) {
+            display:block;
+            position: relative;
+            bottom:0;
+            width: 87vw;
+            margin-top: 15px;
+            img{
+                display: none;
+            }
+        }
+        .inner-card{
+            padding: 30px 80px;
+            border: 1px solid $white-smoke !important;
+            @media (max-width: 768px) {
+                padding: 30px 15px;
+            }
+            svg{
+                font-size: 32px;
+                path{
+                    fill: $dark-gray;
+                    @include opacity();
+                }
+            }
+            h3{
+                font-family: $font-family-default;
+                font-size: 26px;
+                @media (max-width: 768px) {
+                    font-size: 20px;
+                }
+            }
+            p{
+                color:$dark-gray;
+            }
+            p:first-of-type{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            p:last-of-type{
+                font-size: 13px;
+            }
+        }
+    }
+}

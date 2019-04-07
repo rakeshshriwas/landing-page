@@ -1,0 +1,36 @@
+html {
+    background-color: $body-color-background;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+* {
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    color: $text-color-default !important;
+    min-height: 100%;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    background: transparent;
+    color: $text-color-default;
+    text-decoration: none !important;
+    transition: color .2s;
+    outline: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+

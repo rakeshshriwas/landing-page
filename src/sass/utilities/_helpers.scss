@@ -1,0 +1,50 @@
+// default section
+.section-default {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    @media (max-width: 767.98px) { 
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+// default title 
+.ui-block{
+    .ui-title-block-1{
+        font-family: $font-family-default;
+        font-size: 38px;
+        color:$very-dark-gray;
+        margin-bottom: 15px;
+        @media (max-width: 768px) {
+            font-size: 32px;
+        }
+    }
+    p{
+        color: $dark-gray;
+        font-size: 18px;
+    }
+}
+
+// Background theme
+.bg-theme{
+    .ui-block{
+        p{
+            color: #7e8bb2 !important;
+        }
+    }
+}
+
+// default shadow
+.box-shadow{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+// background image
+
+.bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,10 @@
+// $font-family-sans-fallback
+
+$font-family-sans-fallback:   'Arial', sans-serif;
+
+$font-family-poppins:     'Poppins', sans-serif;
+$font-family-playfair:    'Playfair Display', serif;        
+
+$font-family-base:         $font-family-poppins !default;
+$font-family-default:      $font-family-playfair !default;
+

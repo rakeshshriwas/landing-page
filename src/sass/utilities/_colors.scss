@@ -1,0 +1,33 @@
+/* Color Based on current requirement */
+
+// All colors
+
+$black:              #000000 !default;
+$white:              #ffffff !default;
+$very-light-gray:    #f9f9f9 !default;
+$white-smoke:        #f2f2f2 !default;
+$fun-blue:           #22438a !default;
+$dark-slate-blue:    #333399 !default;
+$dark-gray:          #999999 !default;
+$very-dark-gray:     #333333 !default;
+
+
+//body background-color
+$body-color-background:    $white;
+
+// Main color palette
+$color-default:             $white;
+$color-primary:             $fun-blue;
+$color-secondary:           $dark-slate-blue;
+
+// Links
+
+$color-link:                $color-primary;
+$color-link-hover:          $color-secondary;
+$color-link-visited:        $very-dark-gray;
+
+
+// Default Text color
+
+$text-color-default: $black !default;
+$text-color-primary: $dark-gray;

@@ -1,0 +1,17 @@
+# SASS #
+##########
+**/.sass-cache
+**/.sass-cache/*
+**/.map
+
+# NPM #
+##########
+node_modules
+package-lock.json
+
+# VSCode Workspace Settings #
+.vscode
+
+# Compiled Files and Build Dirs #
+##########
+/dist/

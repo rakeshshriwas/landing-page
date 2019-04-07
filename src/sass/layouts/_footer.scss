@@ -1,0 +1,78 @@
+// Footer
+.footer{
+    &-top{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @media (max-width: 767.98px) { 
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        .contact-info{
+            .contact-border{
+                border-left: 1px solid $white-smoke;
+                border-right: 1px solid $white-smoke;
+                // Medium devices (tablets, 768px and down)
+                @media (max-width: 767.98px) { 
+                    border-color: transparent;
+                }
+            }
+            .info{
+                h4{
+                    font-size: 16px;
+                    color: $very-dark-gray;
+                }
+                p{
+                    a{
+                        font-size: 20px;
+                        color: $color-primary;
+                    }
+                }
+                &.social-info{
+                    >div{
+                        justify-content: space-evenly;
+                    }
+                    a{
+                        svg{
+                            font-size: 20px;
+                            fill: $color-primary;
+                        }
+                        &:hover{
+                            svg{
+                                fill: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-bottom{
+        background-color: $very-light-gray;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        .footer-linkes{
+            @media (max-width: 767.98px) { 
+                margin-bottom: 24px;
+                text-align: center;
+            }
+            a{
+                font-size: 12px;
+                color: $dark-gray;
+                padding: 0px 20px;
+                @include opacity();
+                @media (max-width: 767.98px) { 
+                    display: -webkit-inline-box; 
+                }
+            }
+        }
+        .crafted-by{
+            text-align: right;
+            font-size: 12px;
+            color: #f05568;
+            font-weight: $font-weight-semi-bold;
+            @media (max-width: 767.98px) { 
+                text-align: center;
+            }
+        }
+    }
+}

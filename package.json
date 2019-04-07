@@ -1,0 +1,35 @@
+{
+  "name": "gulp4_bootstrap4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rakeshshriwas/Bootstrap4-with-gulp4-Boilerplate.git"
+  },
+  "keywords": [],
+  "author": "Rakesh Shriwas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rakeshshriwas/Bootstrap4-with-gulp4-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/rakeshshriwas/Bootstrap4-with-gulp4-Boilerplate#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^2.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-options": "^1.1.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1"
+  }
+}

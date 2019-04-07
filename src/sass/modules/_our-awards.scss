@@ -1,0 +1,47 @@
+.our-awards{
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .container{
+            max-width: 1100px;
+        }
+    }
+    .award-wrapper{
+        .award-box{
+            h4{
+                font-size: 24px;
+            }
+            p{
+                font-size: 14px;
+                color: $text-color-primary;
+            }
+            &:before{
+                content: '';
+                background-image: url(../../assets/images/leaf-left.png);
+                display: block;
+                background-position: center center;
+                background-size: cover;
+                width: 60px;
+                max-height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 25px;
+                z-index: 100;
+            }
+            &:after {
+                content: '';
+                background-image: url(../../assets/images/leaf-right.png);
+                display: block;
+                background-position: center center;
+                background-size: cover;
+                width: 60px;
+                max-height: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 25px;;
+                z-index: 100;
+            }
+
+        }
+    }
+}

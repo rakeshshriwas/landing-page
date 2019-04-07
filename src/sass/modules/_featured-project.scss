@@ -1,0 +1,88 @@
+// Featured Project
+.our-projects{
+    .project-slider{
+        .project-item{
+            .project-image{
+                height: 591px;
+                @media (max-width: 576px) {
+                    height: 400px;
+                }
+                &:after{
+                    content: '';
+                    border: 1px solid $white-smoke;
+                    position: absolute;
+                    top: 15px;
+                    left: 15px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: -999;
+                    @media (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+            .project-title{
+                position: absolute;
+                top: 20%;
+                right: -200px;
+                z-index: 9;
+                @media (max-width: 576px) {
+                    top: auto;
+                    bottom:0;
+                    right: 0;
+                    left: 0;
+                }
+                .project-location{
+                    padding: 25px 55px 25px 30px;
+                    box-sizing: border-box;
+                    @media (max-width: 576px) {
+                        background-color: rgba(34, 67, 138, 0.74);
+                    }
+                    h4{
+                        font-size: 28px;
+                        color: $white;
+                        font-family: $font-family-default;
+                    }
+                    p{
+                        color: $white;
+                        font-size: 16px;
+                        opacity: 0.53;
+                        margin: 0;
+                    }
+                }
+                .project-price{
+                    position: relative;
+                    right: 30px;
+                    background-color: #ff9900;
+                    padding: 14px 20px;
+                    width: 205px;
+                    @media (max-width: 576px) {
+                        width:100%;
+                        right: 0px;
+                        background-color: rgba(255, 153, 0, 0.62)
+                    }
+                    p{
+                        margin: 0;
+                        color: $white;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .project-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                @media (max-width: 992px) {
+                    margin-top: 25px !important;
+                }
+                p{
+                    color: $dark-gray;
+                }
+                a{
+                    font-size: 14px;
+                    color: #3399ff;
+                }
+            }
+        }
+    }
+}

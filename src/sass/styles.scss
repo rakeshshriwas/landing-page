@@ -1,0 +1,26 @@
+// @import 'materialize/materialize';
+//utilities
+ @import 'utilities/utilities';
+
+// Base
+ @import 'base/base';
+
+// Layouts
+@import 'layouts/index';
+
+// Layouts
+@import 'modules/index';
+
+// themes
+@import 'themes/index';
+
+// Override Bootstrap SCSS
+$body-bg: #ffffff;
+$theme-colors: (
+    'primary': $color-primary,
+    'secondary': $color-secondary
+
+);
+
+$border-radius: 0px;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,50 @@
+// Button
+.btn-default{
+    position: relative;
+    padding-left: 56px !important;
+    padding-right: 56px !important;
+    background-color: $white !important;
+    border-color: $white !important;
+    font-weight: $font-weight-semi-bold !important;
+    &:after{
+        content: '';
+        height: 1px;
+        width: 25px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: -12.5px;
+        background-color: $white;
+    }
+    &:hover{
+        color: $white  !important;
+        background-color: $color-primary  !important;
+        border-color: $white !important;
+    }
+    &:focus{
+        box-shadow: none;
+    }
+    &.outline{
+        font-size: 14px;
+        font-weight: 500;
+        background-color: transparent !important;
+        border-color: $white-smoke !important;
+        border-width: 1px;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out;
+        &.btn-small{
+            padding: 16px 48px !important;
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        &:after{
+            background-color: $color-primary;
+        }
+        &:hover{
+            background-color: $color-primary !important;
+            border-color: $color-primary !important;
+            color: $white !important;
+        }
+    }
+
+}

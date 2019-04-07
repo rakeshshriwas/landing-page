@@ -1,0 +1,148 @@
+// Header
+.header{
+    &:before{
+        content: '';
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+        background-image: linear-gradient(transparent,rgba(0, 0, 0, 0.31) 80%);
+        background-repeat: no-repeat;
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#FF000000', GradientType=0);
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 60px;
+        transform: rotate(180deg);
+        z-index: 9;
+    }
+    .main-nav{
+        padding-top: 17px;
+        padding-bottom: 17px;
+        transition: all .5s ease-in-out;
+        @media (max-width: 767.98px) {
+            .navbar-nav{
+                margin-top: 5px;
+            }
+        }
+        .navbar-brand{
+            padding: 2px 7px;
+            img{
+                height: 29.5px;
+                transition: all .3s ease-in-out;
+            }          
+        }        
+        &.navbar-light{
+            .navbar-toggler{
+                border-color: transparent;
+                position: relative;
+                &:focus{
+                    outline: none;
+                }
+                span{
+                    display: block;
+                    background-color: $white;
+                    height: 3px;
+                    width: 25px;
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    left: 0;
+                    opacity: 1;
+                    &:nth-child(1), &:nth-child(3){
+                        transition: -webkit-transform .35s ease-in-out;
+                        transition: transform .35s ease-in-out;
+                        transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+                    }
+                }
+                &:not(.collapsed){
+                    span{
+                        &:nth-child(1){
+                            position: absolute;
+                            left: 12px;
+                            top: 10px;
+                            -webkit-transform: rotate(135deg);
+                            transform: rotate(135deg);
+                            opacity: 0.9;
+                        }
+                        &:nth-child(2) {
+                            height: 12px;
+                            visibility: hidden;
+                            background-color: transparent;
+                        }
+                        &:nth-child(3) {
+                            position: absolute;
+                            left: 12px;
+                            top: 10px;
+                            -webkit-transform: rotate(-135deg);
+                            transform: rotate(-135deg);
+                            opacity: 0.9;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-item{
+            &.active{
+                .nav-link{
+                    color: $white;
+                }
+            }
+            .nav-link{
+                color: $white;
+                font-size: 13px;
+                text-transform: uppercase;
+                &:hover{
+                    color: $color-primary;
+                }
+
+            }
+            &:last-child{
+                .nav-link{
+                    border: 1px solid $white;
+                    margin-left: 25px;
+                    padding: 7px 22px;
+                    display: -webkit-inline-box;
+                    @media (max-width: 767.98px) {
+                        margin-left: 0px;
+                        margin-top: 10px; 
+                    }
+                }
+            }
+        }
+        &.bg-white{
+            padding-top:12px; 
+            padding-bottom:12px; 
+            transition: all .5s ease-in-out;
+            box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+            .navbar-brand{
+                background-color: #22438a;
+                padding: 0px 7px 10px 7px;
+                img{
+                    height: 25px;
+                    transition: all .3s ease-in-out;
+                }
+            }
+            .navbar-toggler{
+                span{
+                    background-color: $color-primary;
+                }
+            }
+            .nav-item{
+                &.active{
+                    .nav-link{
+                        color: $color-primary;
+                    }
+                }
+                &:last-child{
+                    .nav-link{
+                       border-color: $color-primary;
+                    }
+                }
+                .nav-link{
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
